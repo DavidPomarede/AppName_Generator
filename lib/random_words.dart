@@ -33,7 +33,7 @@ class RandomWordsState extends State<RandomWords> {
     return ListTile(
         title: Text(pair.asPascalCase, style: TextStyle(fontSize: 18.0)),
         trailing: Icon(alreadySaved ? Icons.favorite : Icons.favorite_border,
-            color: alreadySaved ? Colors.red : null),
+            color: alreadySaved ? Colors.green : null),
         onTap: () {
           setState(() {
             if (alreadySaved) {
